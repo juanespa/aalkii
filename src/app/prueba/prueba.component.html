@@ -1,0 +1,23 @@
+<div class="container">
+<br><br>
+<table class="table">
+  <caption>Carros disponibles</caption>
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Placa</th>
+      <th scope="col">Fecha Ini.</th>
+      <th scope="col">Fecha Fin.</th>
+    </tr>
+  </thead>
+  <tbody>
+   <tr *ngFor="let a of nombre">
+     <td>{{a.id}}</td>
+     <td>{{a.placa}}</td>
+     <td>{{a.fechaini}}</td>
+     <td>{{a.fechafin}}</td>
+   </tr>
+  </tbody>
+ </table>
+
+</div>

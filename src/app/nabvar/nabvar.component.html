@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-black-dark">
+  <a class="navbar-brand" routerLink="/">
+    <i class="fa fa-home"></i> ALKIKAR
+  </a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" routerLink="/home"><i class="fa fa-home"></i> Inicio</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-car"></i> Vehiculos
+        </a>
+        <div class="dropdown-menu bg-black-dark" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/carrosdisponibles">Disponibles</a>
+          <a class="dropdown-item" routerLink="/carrosreservas">Reservas</a>
+          <a class="dropdown-item" routerLink="/vehiculoslistar">Lista vehiculos</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link"routerLink="/usuarios"><i class="fa fa-user-circle"></i> Usuarios</a>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+

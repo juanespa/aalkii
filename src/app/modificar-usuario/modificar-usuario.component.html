@@ -1,0 +1,22 @@
+<div class="text-center">
+  <h5>Modificar usuario</h5>
+  <label for="">ID</label>
+  <input type="text" class="form-control" [(ngModel)]="id_usuario" readonly>
+  <label for="" >Nombre</label>
+  <input type="text" class="form-control" [(ngModel)]="nombre"><br>
+  <label for="">Email</label>
+  <input type="email" class="form-control" [(ngModel)]="email"><br>
+  <label for="">Telefono</label>
+  <input type="text" class="form-control" [(ngModel)]="telefono"><br>
+  <label for="">Estado</label>
+  <input type="number" class="form-control" [(ngModel)]="estado_usuario"><br>
+  <label for="">Ciudad</label>
+  <input type="text" class="form-control" [(ngModel)]="ciudad"><br>
+  <label for="">Password</label>
+  <input type="text" class="form-control" [(ngModel)]="password"><br>
+  <button (click)="modificarUsuario()" class="btn btn-success">Actualizar</button>
+  <button routerLink="/usuarios" class="btn btn-danger">Cancelar</button>
+  <br><br>
+</div>
+
+

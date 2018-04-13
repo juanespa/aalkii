@@ -1,0 +1,55 @@
+<div class="container text-center">
+  <br>
+  <br>
+  <table class="table">
+    <caption>Vehiculos</caption>
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Placa</th>
+        <th scope="col">Id usuario</th>
+        <th scope="col">Id marca</th>
+        <th scope="col">id ciudad.</th>
+        <th scope="col">Modelo</th>
+        <th scope="col">Version</th>
+        <th scope="col">Puertas.</th>
+        <th scope="col">Cilindraje</th>
+        <th scope="col">Transmision</th>
+        <th scope="col">Aire aco.</th>
+        <th scope="col">Combustible</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ve of vehi">
+        <td>{{ve.placa}}</td>
+        <td>{{ve.id_usuario}}</td>
+        <td>{{ve.id_marca}}</td>
+        <td>{{ve.id_ciudad}}</td>
+        <td>{{ve.modelo}}</td>
+        <td>{{ve.version}}</td>
+        <td>{{ve.puertas}}</td>
+        <td>{{ve.cilindraje}}</td>
+        <td>{{ve.transmision}}</td>
+        <td>{{ve.aa}}</td>
+        <td>{{ve.tipo_combustible}}</td>
+        <td>{{ve.estado}}</td>
+        <td class="editar text-center">
+          <a routerLink="/modificarvehiculo/{{ve.placa}}/{{ve.id_usuario}}/{{ve.id_marca}}/{{ve.id_ciudad}}/{{ve.modelo}}/{{ve.version}}/{{ve.puertas}}/{{ve.cilindraje}}/{{ve.transmision}}/{{ve.aa}}/{{ve.tipo_combustible}}/{{ve.estado}}">
+            <i class="fa fa-edit "></i>
+          </a>
+        </td>
+        <td class="eliminar text-center">
+          <a (click)="eliminarVehiculo(ve.placa)">
+            <i class="fa fa-times "></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+

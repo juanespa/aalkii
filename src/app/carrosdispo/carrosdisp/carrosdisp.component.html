@@ -1,0 +1,36 @@
+<div class="container text-center">
+  <br>
+  <br>
+  <table class="table">
+    <caption>Carros disponibles</caption>
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Fecha Ini.</th>
+        <th scope="col">Fecha Fin.</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of nombre">
+        <td>{{a.id}}</td>
+        <td>{{a.placa}}</td>
+        <td>{{a.fechaini}}</td>
+        <td>{{a.fechafin}}</td>
+        <td class="editar text-center">
+          <a routerLink="/modificarcarrodispo/{{a.id}}/{{a.placa}}/{{a.fechaini}}/{{a.fechafin}}">
+            <i class="fa fa-edit fa-2x"></i>
+          </a>
+        </td>
+        <td class="eliminar text-center">
+          <a (click)="eliminarCarrDisp(a.placa)">
+            <i class="fa fa-times fa-2x"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

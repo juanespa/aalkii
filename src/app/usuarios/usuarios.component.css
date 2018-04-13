@@ -1,0 +1,17 @@
+td.editar i {
+    text-align: center;
+    color: #555;
+    cursor: pointer;
+}
+
+td.eliminar i {
+    text-align: center;
+    color: red;
+    cursor: pointer;
+}
+
+.algo {
+    text-align: left;
+}
+
+

@@ -1,0 +1,22 @@
+<div class="text-center">
+  <h5>Agregar Usuario </h5>
+  <label for="" >ID</label>
+  <input type="number" class="form-control" placeholder="ID" [(ngModel)]="id_usuario">
+  <label for="">Nombre</label>
+  <input type="text" class="form-control" placeholder="Nombre" [(ngModel)]="nombre">
+  <label for="">Email</label>
+  <input type="email" class="form-control" placeholder="name@example.com" [(ngModel)]="email">
+  <label for="">Telefono</label>
+  <input type="text" class="form-control" placeholder="Telefono" [(ngModel)]="telefono">
+  <label for="">Estado</label>
+  <input type="number" class="form-control" placeholder="Estado" [(ngModel)]="estado_usuario">
+  <label for="">Ciudad</label>
+  <input type="text" class="form-control" placeholder="Ciudad" [(ngModel)]="ciudad">
+  <label for="">Password</label>
+  <input type="text" class="form-control" placeholder="Password" [(ngModel)]="password">
+  <br>
+  <button (click)="nuevoUsuario()" class="btn btn-success">Agregar</button>
+  <button routerLink="/usuarios" class="btn btn-danger">Cancelar</button>
+  <br><br>
+</div>
+

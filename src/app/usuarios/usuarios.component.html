@@ -1,0 +1,51 @@
+<div class="container text-center">
+  <br>
+  <div>
+    <div class="col-md-4 offset-md-8 text-right">
+      <button class="btn btn-success " routerLink="/nuevousuario"> <i class="fa fa-plus"></i> Añadir Usuario</button> <br><br>
+    </div>
+  </div>
+  <div></div>
+
+  <table class="table">
+    <caption>Lista de Usuarios</caption>
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Telefono</th>
+        <th scope="col">Estado Usuario</th>
+        <th scope="col">Ciudad</th>
+        <th scope="col">Password</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usua of usuar" >
+        <td>{{usua.id_usuario}}</td>
+        <td>{{usua.nombre}}</td>
+        <td>{{usua.email}}</td>
+        <td>{{usua.telefono}}</td>
+        <td>{{usua.estado_usuario}}</td>
+        <td>{{usua.ciudad}}</td>
+        <td>{{usua.password}}</td>
+        <td class="editar text-center"><a routerLink="/modificarusuario/{{usua.id_usuario}}/{{usua.nombre}}
+          /{{usua.email}}/{{usua.telefono}}/{{usua.estado_usuario}}/{{usua.ciudad}}/{{usua.password}}">
+        <i class="fa fa-edit fa-2x"></i></a>
+      </td>
+        <td class="eliminar text-center">
+          <a (click)="eliminarUsuario(usua.id_usuario)">
+            <i class="fa fa-times fa-2x"></i>
+          </a>
+      </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+

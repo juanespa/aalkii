@@ -1,0 +1,36 @@
+<div class="text-center">
+  <h5>Modificar Vehiculo</h5>
+  <label for="">Placa</label>
+  <input type="text" class="form-control" [(ngModel)]="placa" readonly>
+  <label for="">Id usuario</label>
+  <input type="number" class="form-control" [(ngModel)]="id_usuario" readonly>
+  <label for="">Id marca</label>
+  <input type="number" class="form-control" [(ngModel)]="id_marca" readonly>
+  <label for="">Id ciudad</label>
+  <input type="number" class="form-control" [(ngModel)]="id_ciudad" readonly>
+  <label for="">Modelo</label>
+  <input type="number" class="form-control" [(ngModel)]="modelo" readonly>
+  <label for="">Version</label>
+  <input type="text" class="form-control" [(ngModel)]="version" readonly>
+  <label for="">Puertas</label>
+  <input type="text" class="form-control" [(ngModel)]="puertas">
+  <label for="">Cilindraje</label>
+  <input type="text" class="form-control" [(ngModel)]="cilindraje">
+  <label for="">Transmision</label>
+  <input type="text" class="form-control" [(ngModel)]="transmision" readonly>
+  <label for="">Aire Acondicionado</label>
+  <input type="text" class="form-control" [(ngModel)]="aa">
+  <label for="">Combustible</label>
+  <input type="text" class="form-control" [(ngModel)]="tipo_combustible">
+  <label for="">Estado</label>
+  <input type="number" class="form-control" [(ngModel)]="estado">
+
+  <br>
+  <button class="btn btn-success" (click)="modificarVehiculo()">Actualizar</button>
+  <button routerLink="/vehiculoslistar" class="btn btn-danger">Cancelar</button>
+  <br><br>
+</div>
+
+
+<!-- <label for="">Id usuario</label>
+<input type="number" class="form-control" [(ngModel)]="id_usuario" readonly> -->

@@ -1,0 +1,46 @@
+<div class="container text-center">
+  <br>
+  <br>
+  <table class="table">
+    <caption>Carros reservados</caption>
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Id reserva</th>
+        <th scope="col">Id usuario</th>
+        <th scope="col">Fecha res.</th>
+        <th scope="col">Fecha ini.</th>
+        <th scope="col">Fecha fin.</th>
+        <th scope="col">Placa</th>
+        <th scope="col">Met. Pago</th>
+        <th scope="col">Poliza</th>
+        <th scope="col">Cal. Servicio</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Eliminar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let res of reserva">
+        <td>{{res.id_reserva}}</td>
+        <td>{{res.id_usuario}}</td>
+        <td>{{res.fecha_reserva}}</td>
+        <td>{{res.fecha_inicio}}</td>
+        <td>{{res.fecha_fin}}</td>
+        <td>{{res.placa}}</td>
+        <td>{{res.metodo_pago}}</td>
+        <td>{{res.poliza}}</td>
+        <td>{{res.calificacion_servicio}}</td>
+        <td class="editar text-center">
+          <a routerLink="/modificarreservas/{{res.id_reserva}}/{{res.id_usuario}}/{{res.fecha_reserva}}/{{res.fecha_inicio}}/{{res.fecha_fin}}/{{res.placa}}/{{res.metodo_pago}}/{{res.poliza}}/{{res.calificacion_servicio}}">
+            <i class="fa fa-edit fa-2x"></i>
+          </a>
+        </td>
+        <td class="eliminar text-center">
+          <a (click)="eliminarReserva(res.id_reserva)">
+            <i class="fa fa-times fa-2x"></i>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

@@ -1,0 +1,27 @@
+<div class="text-center">
+  <h5>Modificar Reserva</h5>
+  <label for="">Id reserva</label>
+  <input type="number" class="form-control" [(ngModel)]="id_reserva" readonly>
+  <label for="">Id usuario</label>
+  <input type="number" class="form-control" [(ngModel)]="id_usuario" readonly>
+  <label for="">Fecha de reserva</label>
+  <input type="date" class="form-control" readonly [(ngModel)]="fecha_reserva" readonly>
+  <label for="">Fecha de Inicio</label>
+  <input type="date" class="form-control" [(ngModel)]="fecha_inicio" readonly>
+  <label for="">Fecha final</label>
+  <input type="date" class="form-control" [(ngModel)]="fecha_fin" readonly>
+  <label for="">Placa</label>
+  <input type="text" class="form-control" [(ngModel)]="placa" readonly>
+  <label for="">Metodo de pago</label>
+  <input type="number" class="form-control" [(ngModel)]="metodo_pago">
+  <label for="">Poliza</label>
+  <input type="number" class="form-control" [(ngModel)]="poliza">
+  <label for="">Calificacion del servicio</label>
+  <input type="text" class="form-control" [(ngModel)]="calificacion_servicio">
+
+  <br>
+  <button class="btn btn-success" (click)="modificarReserva()">Actualizar</button>
+  <button routerLink="/carrosreservas" class="btn btn-danger">Cancelar</button>
+  <br><br>
+</div>
+

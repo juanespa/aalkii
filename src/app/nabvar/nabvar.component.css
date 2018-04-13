@@ -1,0 +1,10 @@
+nav.navbar ul.nav li {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+nav.navbar div.collapse ul.navbar-nav li.nav-item a {}
+
+.bg-black-dark{
+  background: #ccc;
+}

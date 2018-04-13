@@ -1,0 +1,21 @@
+.margin-10-v {
+    margin: 37px auto;
+    text-align: center;
+}
+
+.margin-11-v {
+    margin: 37px auto;
+    text-align: center;
+}
+
+.bg-black-dark {
+    background: #222;
+}
+
+.bg-black {
+    background: #555;
+}
+
+.bg-black-light {
+    background: #ccc;
+}
